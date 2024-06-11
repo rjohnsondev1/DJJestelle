@@ -14,10 +14,7 @@
   --contact-padding: 5rem;
   --color-card-1: #246185;
   --color-card-2: #9df2eb;
-  --color-card-3: #ddae11;
-  --color-card-4: #673489;
-  --color-card-5: #9dcaf2;
-  --color-card-6: #f29dcc;
+
   --color-bg-card: rgba(255, 255, 255, 0.2);
   --color-bg-card-inner: rgb(44, 40, 44);
 }
@@ -109,22 +106,6 @@ a:focus-visible {
    :focus-visible */
   outline: 2px solid red;
   background: transparent;
-}
-
-
-
-
-.unbutton {
-  background: none;
-  border: 0;
-  padding: 0;
-  margin: 0;
-  font: inherit;
-  cursor: pointer;
-}
-
-.unbutton:focus {
-  outline: none;
 }
 
 .frame {
@@ -229,28 +210,10 @@ a:focus-visible {
   z-index: 1000;
 }
 
-.soundcloud {
-  width: 700vw;
-  height: 200vh;
-  max-width: 755px;
-  min-width: 250px;
-  aspect-ratio: 2/3;
-  font-size: 9px;
- 
-  padding: 5px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border-radius: 10px;
-  position: relative;
-  align-items: stretch;
-  
-  opacity: .6;
-  z-index: 100000;
-}
+
 
 .circle {
   top: -300px;
-
   display: inline-block;
   position: relative;
   left: 50px;
@@ -555,7 +518,6 @@ section1 {
   margin: 25vh auto 0;
   max-width: 600px;
   text-align: center;
-  text-transform:
 }
 
 .wrap {
