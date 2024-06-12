@@ -26,8 +26,6 @@ html, body {
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
-
   overflow-x: hidden;
 }
 
@@ -35,6 +33,7 @@ html, body {
   position: fixed;
   height: 100%;
   background-color: #1a3da5;
+
 }
 
 /* Page Loader */
@@ -74,7 +73,7 @@ html, body {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--color-link);
   outline: none;
   cursor: pointer;
@@ -84,6 +83,7 @@ a:hover {
   text-decoration: underline;
   color: var(--color-link-hover);
   outline: none;
+  cursor: pointer;
 }
 
 /* Better focus styles from https://developer.mozilla.org/en-US/docs/Web/CSS/:focus-visible */
@@ -123,25 +123,7 @@ a:focus-visible {
   grid-template-areas: 'title title' 'back archive' 'sponsor sponsor' 'hire hire';
 }
 
-.frame a {
-  pointer-events: auto;
-}
 
-.frame__title {
-  grid-area: title;
-  font-size: inherit;
-  margin: 0;
-}
-
-.frame__back {
-  grid-area: back;
-  justify-self: start;
-}
-
-.frame__archive {
-  grid-area: archive;
-  justify-self: start;
-}
 
 .frame__contact {
   position: fixed;
@@ -153,7 +135,6 @@ a:focus-visible {
   display: grid;
   place-items: center;
   cursor: pointer;
-
   border-radius: 50%;
 }
 .frame__sub {
@@ -206,14 +187,9 @@ a:focus-visible {
   transition: all 0.3s;
 }
 
-
-
-
 .music {
   z-index: 1000;
 }
-
-
 
 .circle {
   top: -300px;
@@ -236,12 +212,10 @@ a:focus-visible {
   right: 0;
   bottom: 100;
   cursor: pointer;
-  text-decoration: none;
+ 
 }
 
-.button {
- z-index: 10000;
-}
+
 .frame__sub:hover .modal,
 .frame__sub:focus .modal {
   pointer-events: auto;
@@ -249,20 +223,6 @@ a:focus-visible {
   transform: translate3d(0px,0px,0px);
 }
 
-.frame__hire {
-  grid-area: hire;
-  max-width: 200px;
-}
-
-.frame__demos {
-  grid-area: demos;
-  display: flex;
-  gap: 1rem;
-}
-
-main {
-  position: relative;
-}
 
 .header {
  
@@ -332,21 +292,6 @@ nav  {
   transform: scale(.75);
 }
 
-section1 {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  width: 100%;
-  align-content: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  scroll-snap-align: start;
-  user-select: none;
-  overflow: hidden;
-
-}
-
 .hero {
   float: left;
   width: 100%;
@@ -372,18 +317,12 @@ section1 {
 }
 
 .intro__title {
- 
-  
-
   text-transform: uppercase;
   font-size: clamp(2rem,7vw,8rem);
   font-weight: 400;
-
- 
   position: relative;
   z-index: 100000;
   align-self: center;
- 
   text-align: center;
   margin: 0;
   text-align: center;
@@ -507,43 +446,11 @@ section1 {
   text-align: center;
 }
 
-.wrap {
-  position: relative;
-  min-height: 100vh;
-}
-
-.wrap__inner {
-  position: relative;
-  perspective: 1000px;
-}
-
-.content {
-  width: 100vw;
-  position: relative;
-  transform-style: preserve-3d;
-  display: grid;
-
-  grid-template-areas: 'card';
-  grid-template-columns: 100%;
-  place-items: center;
-}
-
 .content .card {
   grid-area: card;
   background: rgba(132, 128, 143, 0.36);
 }
 
-
-
-.div-block-5 {
-  width: 300;
-  height: 150px;
-  word-break: normal;
-  overflow-wrap: normal;
-  position: relative;
-  bottom: -93px;
-  left: 50px;
-}
 
 
 .grid {
@@ -560,14 +467,7 @@ section1 {
 }
   
 
-.grid2 {
-  position: relative;
-  perspective: 1000px;
-  align-self: center;
-  grid-area: intro-title;
-  grid-row: 1 / span 3;
-  display: grid;
-}
+
 
 .grid .card .card1{
   box-shadow: 0 2px 7px 0 rgba(0,0,0,0.8);
@@ -585,17 +485,9 @@ section1 {
   --color-card: var(--color-card-3);
 }
 
-.card:nth-child(4n) {
-  --color-card: var(--color-card-4);
-}
 
-.card:nth-child(5n) {
-  --color-card: var(--color-card-5);
-}
 
-.card:nth-child(6n) {
-  --color-card: var(--color-card-6);
-}
+
 
 .card__img {
   grid-area: card-img;
@@ -666,12 +558,7 @@ section1 {
   padding: 2rem 1rem 1rem;
 }
 
-.credits {
-  font-size: 1.5rem;
-  text-align: center;
-  margin: 50vh auto 0;
-  padding-bottom: 50vh;
-}
+
 
 
 
