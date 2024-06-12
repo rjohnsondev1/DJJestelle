@@ -16,7 +16,7 @@ import particlesVertexShader2 from '../shaders/particles/vertex2.glsl'
 // Importing utility function for preloading images
 import { preloadImages } from './utils.js';
 // Importing StackMotionEffect classes from different effect files with renamed imports to avoid name conflicts
-import { StackMotionEffect as StackMotionEffect1 } from './effect-1/stackMotionEffect.js';
+//import { StackMotionEffect as StackMotionEffect1 } from './effect-1/stackMotionEffect.js';
 import { StackMotionEffect as StackMotionEffect2 } from './effect-2/stackMotionEffect.js';
 import { StackMotionEffect as StackMotionEffect3 } from './effect-3/stackMotionEffect.js';
 
@@ -243,7 +243,6 @@ scene.add(camera);
 //Controls
 const controls = new OrbitControls(camera, canvas);
 controls.enableDamping = true;
-
 controls.enableZoom = false;
 
 
