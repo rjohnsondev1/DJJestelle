@@ -193,12 +193,16 @@ a:focus-visible {
 
 
 .frame__sub:hover .modal,
-.frame__sub:focus .modal {
+.frame__sub:focus, active .modal {
   pointer-events: auto;
   opacity: 1;
   transform: translate3d(0px,0px,0px);
 }
 
+
+.frame__sub:focus-visible {
+  outline: none;
+}
 
 .header {
  
@@ -751,8 +755,5 @@ nav  {
     font-size: 12px;
   }
 
-  .modal {
-    width: 90%;
-    padding: 1rem;
-  }
+
 }
