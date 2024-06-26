@@ -337,20 +337,19 @@ nav  {
 .music {
   z-index: 1000;
   top: 120px;
+  right: 5rem;
   position: relative;
 
 
 }
 
 .circle {
-  top: 250px;
-  display: inline-block;
+  top: 450px;
   position: absolute;
-  right: 400px;
-  width: 1vw;
   cursor: pointer;
- z-index: 100;
- max-width: 255px;
+  z-index: 100;
+  right: 5rem;
+  
 
 }
 
@@ -439,6 +438,7 @@ nav  {
   text-align: center;
   text-transform: uppercase;
   z-index: 1000;
+  padding: 3rem;
 }
 
 .music-title {
@@ -609,7 +609,7 @@ nav  {
   }
 
   .circle {
-    right: 10%;
+    right: 30%;
     left: auto;
   }
 
