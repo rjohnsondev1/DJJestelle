@@ -21,7 +21,7 @@
 
 html, body {
   margin: 0;
-  background-color: rgb(40, 40, 62);
+  background-color: rgb(10, 10, 10);
   color: var(--color-text);
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
@@ -34,7 +34,7 @@ html, body {
   top: 0;
   left: 0;
   height: 100%;
-  background-color: #363f5a;
+  background-color: #020202;
 
 }
 
