@@ -469,6 +469,7 @@ nav  {
   justify-content: center;
   gap: 2rem;
   filter: brightness(70%);
+  padding: 4rem;
 }
   
 
@@ -522,11 +523,12 @@ nav  {
 .footer {
   flex-direction: column;
   align-items: center;
-  padding-bottom: 100px 5% 40px 150%;
+  
   display: flex;
   position: relative; 
   top: 8px;
   z-index: 10000;
+  padding: 10vh 0 0 0;
 
 }
 .container__footer {
@@ -536,6 +538,10 @@ nav  {
   align-items: center;
   grid-gap: 2rem;
   bottom: 0;
+}
+
+.p {
+  margin: 10 vh 0;
 }
 
 
