@@ -76,7 +76,7 @@ export class StackMotionEffect {
 
               ScrollTrigger.create({
                 trigger: elem,
-               markers: true,
+               //markers: true,
               
                 onEnter: () => {animateFrom(elem)},
                onEnterBack: () => {animateFrom(elem, -1)},

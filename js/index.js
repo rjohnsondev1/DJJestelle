@@ -59,7 +59,7 @@ const init = () => {
 
     ScrollTrigger.create({
       trigger: elem,
-      markers: true,
+     // markers: true,
       scrub: true,
   
 
@@ -121,7 +121,7 @@ gsap.to('.music', {
     start: 'top center',
     end: 'bottom center',
     scrub: 1,
-    markers: true,
+   // markers: true,
     pin: true,
     toggleActions: 'restart pause reverse pause',
   
