@@ -196,6 +196,7 @@ hero.forEach(hero => {
 const canvas = document.querySelector('canvas.webgl');
 
 const scene = new THREE.Scene();
+scene.background = new THREE.Color('#111');
 
 // Loaders
 const dracoLoader = new DRACOLoader();
@@ -251,8 +252,10 @@ const renderer = new THREE.WebGLRenderer({
   canvas: canvas,
   antialias: true,
 });
+
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(sizes.pixelRatio);
+renderer.setClearColor('#111', 1);
 
 
 // Bloom Pass

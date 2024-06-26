@@ -21,7 +21,7 @@
 
 html, body {
   margin: 0;
-  background-color: var(--color-bg);
+  background-color: rgb(40, 40, 62);
   color: var(--color-text);
   font-family: 'Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
@@ -188,30 +188,31 @@ a:focus-visible {
 }
 
 .music {
-  z-index: 1000;
+  z-index: 100;
+  top: 120px;
+  position: relative;
 }
 
 .circle {
-  top: -300px;
+  top: 100px;
   display: inline-block;
-  position: relative;
+  position: absolute;
   left: 50px;
-  right: 0;
+
   cursor: pointer;
- 
+ z-index: 100;
 
 }
 
 .link {
-  z-index: 10000;
+  z-index: 10001;
   display: inline-block;
-  position: relative;
-  left: 140px;
-  top: -35px;
-  width: 100px;
-  right: 0;
-  bottom: 100;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   cursor: pointer;
+  text-decoration: none;
  
 }
 
@@ -462,7 +463,7 @@ nav  {
   display: grid;
   grid-template-columns: repeat(3,auto);
   justify-content: center;
-  gap: 10rem;
+  gap: 2rem;
   filter: brightness(70%);
 }
   
@@ -560,12 +561,6 @@ nav  {
 
 
 
-
-
-
-
-
-
 @media screen and (min-width: 53em) {
   body {
     --page-padding: 2rem;
@@ -601,8 +596,8 @@ nav  {
     align-self: end;
   }
   .grid {
-    padding-left: 12vw;
-    padding-top: 12vh;
+    padding: 10;
+ 
   }
   .content {
     min-height: 100vh;
