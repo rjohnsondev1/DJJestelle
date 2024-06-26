@@ -188,16 +188,16 @@ a:focus-visible {
 }
 
 .music {
-  z-index: 100;
+  z-index: 1000;
   top: 120px;
   position: relative;
 }
 
 .circle {
-  top: 100px;
+  top: 250px;
   display: inline-block;
   position: absolute;
-  left: 50px;
+right: 150px;
 
   cursor: pointer;
  z-index: 100;
