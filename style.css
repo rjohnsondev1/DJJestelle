@@ -32,7 +32,7 @@ html, body {
 .webgl{
   position: fixed;
   height: 100%;
-  background-color: #1a3da5;
+  background-color: #363f5a;
 
 }
 
@@ -120,7 +120,7 @@ a:focus-visible {
   pointer-events: none;
   justify-items: start;
   grid-template-columns: auto auto;
-  grid-template-areas: 'title title' 'back archive' 'sponsor sponsor' 'hire hire';
+  grid-template-areas: 'title title';
 }
 
 
@@ -187,34 +187,7 @@ a:focus-visible {
   transition: all 0.3s;
 }
 
-.music {
-  z-index: 1000;
-  top: 120px;
-  position: relative;
-}
 
-.circle {
-  top: 250px;
-  display: inline-block;
-  position: absolute;
-right: 150px;
-
-  cursor: pointer;
- z-index: 100;
-
-}
-
-.link {
-  z-index: 10001;
-  display: inline-block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  text-decoration: none;
- 
-}
 
 
 .frame__sub:hover .modal,
@@ -231,17 +204,17 @@ right: 150px;
   display: grid;
   z-index: 1000;
   width: 100%;
-  height: 100%;
+  height: auto;
   justify-items: start;
   left: 0;
 }
 
 nav  {
-  padding: 2rem;
+  padding: 1rem;
   position: fixed;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 5rem;
+  gap: 2rem;
   z-index: 1000;
 }
 
@@ -357,6 +330,35 @@ nav  {
   to {
     top: 120%;
   }
+}
+
+.music {
+  z-index: 1000;
+  top: 120px;
+  position: relative;
+}
+
+.circle {
+  top: 250px;
+  display: inline-block;
+  position: absolute;
+  right: 400px;
+
+  cursor: pointer;
+ z-index: 100;
+
+}
+
+.link {
+  z-index: 10001;
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  text-decoration: none;
+ 
 }
 
 .card1 {
@@ -562,15 +564,9 @@ nav  {
 
 
 @media screen and (min-width: 53em) {
-  body {
-    --page-padding: 2rem;
-  }
+ 
   .frame {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+   
     grid-template-columns: auto auto auto 1fr;
     grid-template-rows: auto auto;
     align-content: space-between;
@@ -584,6 +580,20 @@ nav  {
   }
   .frame__hire {
     align-self: end;
+  }
+
+  .nav {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .circle {
+    right: 10%;
+    left: auto;
+  }
+
+  .card {
+    width: 90%;
   }
   .modal {
     bottom: 50px;
@@ -607,4 +617,6 @@ nav  {
   .card-wrap {
     grid-template-columns: repeat(2, 300px);
   }
+
+
 }
