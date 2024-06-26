@@ -338,6 +338,8 @@ nav  {
   z-index: 1000;
   top: 120px;
   position: relative;
+
+
 }
 
 .circle {
@@ -345,9 +347,10 @@ nav  {
   display: inline-block;
   position: absolute;
   right: 400px;
-
+  width: 1vw;
   cursor: pointer;
  z-index: 100;
+ max-width: 255px;
 
 }
 
@@ -543,6 +546,16 @@ nav  {
 .p {
   margin: 10 vh 0;
 }
+.soundcloud {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  width: 30vw;
+  max-width: 255px;
+  min-width: 150px;
+  aspect-ratio: 2/3;
+}
 
 
 .card > * {
@@ -601,7 +614,7 @@ nav  {
   }
 
   .card {
-    width: 90%;
+    width: 70%;
   }
   .modal {
     bottom: 50px;
@@ -625,6 +638,121 @@ nav  {
   .card-wrap {
     grid-template-columns: repeat(2, 300px);
   }
+.soundcloud {
+  max-width: 50%;
+  height: auto;
+  display: block;
+  transform: rotateX('angle');
+}
 
+}
 
+/* Media query for iPhone 15 screen (430px width) */
+@media screen and (max-width: 430px) {
+  /* Adjust the overall padding and margins */
+  .frame {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-row-gap: 0.5rem;
+    grid-column-gap: 1rem;
+  }
+
+  .intro__title {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+  }
+
+  .intro__hint {
+    font-size: 1rem;
+  }
+
+  .circle {
+    right: 5%;
+    left: auto;
+    top: 500px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .link {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 0.8rem;
+  }
+
+  .card1 {
+    width: 100%;
+    max-width: 200px;
+    min-width: 120px;
+    font-size: 8px;
+    padding: 4px;
+  }
+
+  .nav {
+    padding: 0.5rem;
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+
+  .header {
+    height: auto;
+  }
+
+  .logo {
+    width: 60vw;
+    height: auto;
+    transform: scale(0.5);
+  }
+
+  .music {
+    top: 20px;
+    right: 15rem;
+  
+    
+  }
+
+  .section-title {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin: 15vh auto 0;
+  }
+
+  .soundcloud {
+    width: 50%;
+    height: auto;
+    transform: rotate(45deg);
+  }
+
+  .about {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+
+  .container {
+    width: 80vw;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .grid {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .footer {
+    padding: 5vh 0 0 0;
+  }
+
+  .frame__contact,
+  .frame__sub {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+  }
+
+  .modal {
+    width: 90%;
+    padding: 1rem;
+  }
 }
