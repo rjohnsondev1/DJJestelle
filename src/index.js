@@ -17,7 +17,7 @@ import particlesVertexShader2 from '../shaders/particles/vertex2.glsl'
 // Importing utility function for preloading images
 import { preloadImages } from './utils.js';
 // Importing StackMotionEffect classes from different effect files with renamed imports to avoid name conflicts
-//import { StackMotionEffect as StackMotionEffect1 } from './effect-1/stackMotionEffect.js';
+import { StackMotionEffect as StackMotionEffect1 } from './effect-1/stackMotionEffect.js';
 import { StackMotionEffect as StackMotionEffect2 } from './effect-2/stackMotionEffect.js';
 import { StackMotionEffect as StackMotionEffect3 } from './effect-3/stackMotionEffect.js';
 
@@ -62,8 +62,6 @@ const init = () => {
       trigger: elem,
       //markers: true,
       scrub: true,
-  
-
       onEnter: () => {animateFrom(elem)},
      onEnterBack: () => {animateFrom(elem, -1)},
      onLeave: () => {hide(elem)},
@@ -197,7 +195,6 @@ hero.forEach(hero => {
 const canvas = document.querySelector('canvas.webgl');
 
 const scene = new THREE.Scene();
-scene.background = new THREE.Color('#111');
 
 // Loaders
 const dracoLoader = new DRACOLoader();
@@ -256,7 +253,7 @@ const renderer = new THREE.WebGLRenderer({
 
 renderer.setSize(sizes.width, sizes.height);
 renderer.setPixelRatio(sizes.pixelRatio);
-renderer.setClearColor('#111', 1);
+
 
 
 // Bloom Pass
